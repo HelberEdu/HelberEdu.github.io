@@ -6,17 +6,17 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  min-height: 100vh;
   background-color: var(--main-bg-color);
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #app {
+  font-family: 'Open Sans', sans-serif;
   background: black;
-  width: 400px;
+  width: 320px;
   border-radius: 12px;
   box-shadow: 0 5px 30px -5px rgb(0, 0, 0, 0.6);
 }
@@ -29,12 +29,13 @@ body {
   align-items: center;
   justify-content: flex-end;
   border-radius: 10px 10px 0 0;
+  border-bottom-color: red;
 }
 
 .display h1 {
   margin: 0;
   padding: 25px;
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 100;
   overflow-x: auto;
 }
@@ -127,6 +128,35 @@ button:focus {
 /* Responsividade - Large Smartphone vertical*/
 @media screen and (max-width: 600px) {
   #app{
-    width: 95%;
+    width: 90%;
   }
+
+  .display h1 {
+  font-size: 29px; 
+  }
+}
+
+nav {
+  width: 50%;
+  float: none;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* background-color: white; */
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  padding: 40px;
+}
+
+
+nav a {
+  color: var(--emph-color);
 }
