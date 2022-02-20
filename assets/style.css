@@ -1,12 +1,12 @@
 :root {
-  --main-bg-color: aqua;
-}
-
-html {
-
+  --main-bg-color: rgb(17, 11, 11);
+  --bnt-bg-operador-color: rgb(229, 187, 132);
+  --bnt-color: white;
+  --emph-color: rgb(203, 91, 41);
 }
 
 body {
+  font-family: 'Open Sans', sans-serif;
   min-height: 100vh;
   background-color: var(--main-bg-color);
   display: flex;
@@ -15,7 +15,7 @@ body {
 }
 
 #app {
-  background: white;
+  background: black;
   width: 400px;
   border-radius: 12px;
   box-shadow: 0 5px 30px -5px rgb(0, 0, 0, 0.6);
@@ -23,7 +23,7 @@ body {
 
 .display {
   background: black;
-  color: white;
+  color: var(--bnt-color);
   margin: 0;
   display: flex;
   align-items: center;
@@ -35,7 +35,6 @@ body {
   margin: 0;
   padding: 25px;
   font-size: 45px;
-  font-family: 'Lucida Console', sans-serif;
   font-weight: 100;
   overflow-x: auto;
 }
@@ -68,16 +67,23 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   padding: 10px;
+
+  -moz-user-select: none; 
+  -webkit-user-select: none; 
+  -ms-user-select:none; 
+  user-select:none;
+  -o-user-select:none; 
 }
 
 button {
   min-height: 50px;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 500;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background: burlywood;
+  background: var(--main-bg-color);
+  color: white;
 }
 
 button:hover {
@@ -92,23 +98,30 @@ button:focus {
   outline: none;
 }
 .operador {
-  background: rgb(229, 187, 132);
-  color: white;
+  background: var(--main-bg-color);
   font-size: 30px;
 }
 
 .clear {
-  background: rgb(143, 35, 35);
-  color: white;
+  background: var(--main-bg-color);
+  color: var(--bnt-color);
 }
 
 .clear:hover {
  filter: brightness(85%);
 }
 .equals {
-  grid-column: -2;
-  grid-row: 2 / span 4;
-  background: rgb(10, 82, 95);
+  background-color: var(--emph-color);
+  color: white;
+  border-radius: 50%;
+  margin: auto;
+  height: 50px;
+  width: 50px;
+}
+
+.emphasis {
+  background: none;
+  color: var(--emph-color);
 }
 
 /* Responsividade - Large Smartphone vertical*/
