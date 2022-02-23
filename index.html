@@ -22,35 +22,45 @@
   </nav>
   <div id="app">
     <div class="display">
-      <h1>123456789050</h1>
+      <h1 id="display">12345</h1>
     </div>
     <!-- Buttons -->
     <div class="btns" unselectable="on" onselectstart="return false;" onmousedown="return false;">
       <button class="clear emphasis" id="clear-btn">C</button>
-      <button class="delete emphasis" ><i class="fa fa-long-arrow-left" aria-hidden="true"></i></button>
-      <button class="operador emphasis" value="%">%</button>
-      <button class="operador emphasis" value="/">÷</button>
-      <button value="7">7</button>
-      <button value="8">8</button>
-      <button value="9">9</button>
-      <button class="operador emphasis" value="*">×</button>
-      <button value="4">4</button>
-      <button value="5">5</button>
-      <button value="6">6</button>
-      <button class="operador emphasis" value="-">-</button>
-      <button value="1">1</button>
-      <button value="2">2</button>
-      <button value="3">3</button>
-      <button class="operador emphasis" value="+">+</button>
+      <button id="backspace" class="delete emphasis" ><i class="fa fa-long-arrow-left" aria-hidden="true"></i></button>
+
+      <button id="porcentagem" class="operador emphasis" value="%">%</button>
+      <button id="divisao" class="operador emphasis" value="/">÷</button>
+
+      <button id="sete" value="7">7</button>
+      <button id="oito" value="8">8</button>
+      <button id="nove" value="9">9</button>
+
+      <button id="produto" class="operador emphasis" value="*">×</button>
+
+      <button id="quatro" value="4">4</button>
+      <button id="cinco" value="5">5</button>
+      <button id="seis" alue="6">6</button>
+
+      <button id="subtracao" class="operador emphasis" value="-">-</button>
+
+      <button id="um" value="1">1</button>
+      <button id="dois" value="2">2</button>
+      <button id="tres" value="3">3</button>
+
+      <button id="soma" class="operador emphasis" value="+">+</button>
+      
       <button class="adv emphasis" id="adv-btn"><i class="fa fa-expand" aria-hidden="true"></i></button>
-      <button value="0">0</button>
-      <button class="decimal" value=".">,</button>
-      <button class="equals operador" value="=">=</button>
+
+      <button id="zero" value="0">0</button>
+      <button id="decimal" class="decimal" value=".">,</button>
+      <button id="igual" class="equals operador" value="=">=</button>
       
     </div>
   </div>
 
   <!-- import javascript -->
+
   <script src="/assets/script.js"></script>
 </body>
 </html>
