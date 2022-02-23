@@ -5,33 +5,48 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/bd6fcee954.js"></script>
   <link rel="stylesheet" href="/assets/reset.css"/>
   <link rel="stylesheet" href="/assets/style.css"/>
 </head>
 <body>
+  <nav class="menu">
+    <ul>
+      <li><a><i class="fa fa-calculator" aria-hidden="true"></i></a></li>
+      <li><a><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+      <li><a><i class="fa fa-money" aria-hidden="true"></i></a></li>
+    </ul>
+  </nav>
   <div id="app">
     <div class="display">
       <h1>123456789050</h1>
     </div>
     <!-- Buttons -->
-    <div class="btns">
-      <button class="operador" value="+">+</button>
-      <button class="operador" value="-">-</button>
-      <button class="operador" value="*">×</button>
-      <button class="operador" value="/">÷</button>
+    <div class="btns" unselectable="on" onselectstart="return false;" onmousedown="return false;">
+      <button class="clear emphasis" id="clear-btn">C</button>
+      <button class="delete emphasis" ><i class="fa fa-long-arrow-left" aria-hidden="true"></i></button>
+      <button class="operador emphasis" value="%">%</button>
+      <button class="operador emphasis" value="/">÷</button>
       <button value="7">7</button>
       <button value="8">8</button>
       <button value="9">9</button>
+      <button class="operador emphasis" value="*">×</button>
       <button value="4">4</button>
       <button value="5">5</button>
       <button value="6">6</button>
+      <button class="operador emphasis" value="-">-</button>
       <button value="1">1</button>
       <button value="2">2</button>
       <button value="3">3</button>
-      <button class="decimal" value=".">,</button>
+      <button class="operador emphasis" value="+">+</button>
+      <button class="adv emphasis" id="adv-btn"><i class="fa fa-expand" aria-hidden="true"></i></button>
       <button value="0">0</button>
-      <button class="clear" id="clear-btn">C</button>
+      <button class="decimal" value=".">,</button>
       <button class="equals operador" value="=">=</button>
+      
     </div>
   </div>
 
