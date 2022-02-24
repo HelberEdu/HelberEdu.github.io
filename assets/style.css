@@ -22,6 +22,7 @@ body {
 }
 
 .display {
+  padding: 25px;
   background: black;
   color: var(--bnt-color);
   margin: 0;
@@ -140,7 +141,7 @@ nav {
   width: 50%;
   float: none;
   position: absolute;
-  top: 5%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -148,6 +149,7 @@ nav {
 }
 
 nav ul {
+  padding: 0;
   list-style: none;
 }
 
